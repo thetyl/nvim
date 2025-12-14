@@ -9,6 +9,7 @@ vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.autoindent = true
 vim.opt.smartindent = true
+vim.opt.smarttab = true
 
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
@@ -16,7 +17,14 @@ vim.opt.smartcase = true
 vim.opt.termguicolors = true
 vim.opt.guicursor = ""
 vim.opt.background = "dark"
+vim.opt.scrolloff = 10
 
 vim.opt.backup = false
 vim.opt.writebackup = false
 vim.opt.swapfile = false
+vim.opt.undofile = true
+
+vim.opt.splitright = true
+vim.opt.splitbelow = true
+
+vim.opt.mouse = "a"

@@ -1,3 +1,5 @@
+vim.keymap.set("i", "jj", "<Esc>", {remap = false})
+
 vim.keymap.set({"n", "v", "i"}, "<Up>", "<Nop>")
 vim.keymap.set({"n", "v", "i"}, "<Down>", "<Nop>")
 vim.keymap.set({"n", "v", "i"}, "<Left>", "<Nop>")
@@ -8,3 +10,5 @@ vim.keymap.set("n", "<C-j>", "<cmd>m+<CR>")
 
 vim.keymap.set("n", "<leader>b", "^")
 vim.keymap.set("n", "<leader>e", "$")
+
+vim.keymap.set("n", "-", "<cmd>Ex<CR>")
