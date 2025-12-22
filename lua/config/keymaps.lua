@@ -13,6 +13,8 @@ vim.keymap.set("n", "<leader>e", "$")
 
 vim.keymap.set("n", "-", "<cmd>Ex<cr>")
 
+vim.keymap.set("n", "<leader>w", "<C-w>w")
+
 -- fzf-lua
 vim.keymap.set("n", "<leader>ff", "<cmd>FzfLua files<cr>", {desc="Find files"})
 vim.keymap.set("n", "<leader>fg", "<cmd>FzfLua live_grep<cr>", {desc="Find grep"})
