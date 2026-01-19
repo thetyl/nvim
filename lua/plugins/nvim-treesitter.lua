@@ -1,11 +1,18 @@
 return {
 	"nvim-treesitter/nvim-treesitter",
+	lazy = false,
 	build = ":TSUpdate",
-	config = function() 
-		require("nvim-treesitter.config").setup({
-			ensure_installed = { "c", "lua", "vim", "vimdoc" },
-			sync_install = false,
-			highlight = { enable = true }
+	config = function()
+		local treesitter = require("nvim-treesitter")
+		treesitter.setup()
+		treesitter.install { "c", "lua", "vim", "vimdoc", "cpp" }
+
+		vim.api.nvim_create_autocmd("FileType", {
+			pattern = { "c", "lua", "vim", "vimdoc", "cpp" },
+			callback = function()
+				vim.treesitter.start()
+				vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+			end
 		})
 	end
 }
