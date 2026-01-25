@@ -29,3 +29,5 @@ vim.opt.splitright = true
 vim.opt.splitbelow = true
 
 vim.opt.mouse = "a"
+
+vim.opt.clipboard:append "unnamedplus"
