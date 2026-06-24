@@ -1,27 +1,9 @@
 return {
 	{
-		"ellisonleao/gruvbox.nvim",
-		priority = 1000,
-		enabled = false,
+		"TheTyl/segfault.nvim",
 		config = function()
-			require("gruvbox").setup({})
-			vim.cmd.colorscheme("gruvbox")
+			vim.cmd.colorscheme("segfault")
 		end
-	},
-	{
-		"sainnhe/gruvbox-material",
-		enabled = true,
-		priority = 1000,
-		config = function()
-			-- vim.g.gruvbox_material_transparent_background = 1
-			vim.g.gruvbox_material_foreground = "mix"
-			vim.g.gruvbox_material_background = "hard"
-			-- vim.g.gruvbox_material_ui_contrast = "high"
-			-- vim.g.gruvbox_material_float_style = "bright"
-			vim.g.gruvbox_material_statusline_style = "material"
-			-- vim.g.gruvbox_material_cursor = "auto"
-			vim.cmd.colorscheme("gruvbox-material")
-		end,
 	}
 }
 

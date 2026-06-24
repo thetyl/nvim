@@ -17,7 +17,7 @@ vim.opt.smartcase = true
 vim.opt.termguicolors = true
 vim.opt.guicursor = ""
 vim.opt.background = "dark"
-vim.opt.scrolloff = 10
+vim.opt.scrolloff = 12
 vim.opt.showmode = false
 
 vim.opt.backup = false

@@ -24,5 +24,5 @@ vim.keymap.set("n", "<leader>fw", "<cmd>FzfLua grep_cword<cr>", {desc="Find curr
 vim.keymap.set("n", "<leader>fW", "<cmd>FzfLua grep_cWORD<cr>", {desc="Find current WORD"})
 vim.keymap.set("n", "<leader>fr", "<cmd>FzfLua resume<cr>", {desc="Find resume"})
 vim.keymap.set("n", "<leader>fo", "<cmd>FzfLua oldfiles<cr>", {desc="Find old files"})
-vim.keymap.set("n", "<leader><leader>", "<cmd>FzfLua buffers<cr>", {desc="Find existing buffers"})
+vim.keymap.set("n", "<leader>fb", "<cmd>FzfLua buffers<cr>", {desc="Find existing buffers"})
 vim.keymap.set("n", "<leader>/", "<cmd>FzfLua lgrep_curbuf<cr>", {desc="Live grep the current buffer"})
