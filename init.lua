@@ -10,16 +10,16 @@ vim.api.nvim_create_autocmd("PackChanged", {callback = function(ev)
 
 		vim.cmd("TSUpdate")
 	end
-end })
+end})
 
 vim.pack.add({
-	"https://github.com/TheTyl/segfault.nvim",
+	"https://github.com/TheTyl/elysium.nvim",
 	"https://github.com/nvim-mini/mini.statusline",
 	"https://github.com/ibhagwan/fzf-lua",
 	"https://github.com/nvim-treesitter/nvim-treesitter"
 })
 
-vim.cmd.colorscheme("segfault")
+vim.cmd.colorscheme("elysium")
 
 -- statusline
 require("mini.statusline").setup()
